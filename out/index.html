@@ -1,0 +1,434 @@
+<!doctype html>
+<head><meta charset="utf-8"><title>hourCycle option</title><script type="application/json" id="menu-search-biblio">[{"type":"clause","id":"","aoid":null,"title":"Introduction","titleHTML":"Introduction","number":"","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Introduction"},{"type":"table","id":"table-datetimeformat-components","number":1,"caption":"Table 1: Components of date and time formats","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Table 1: Components of date and time formats"},{"type":"op","aoid":"InitializeDateTimeFormat","refId":"sec-initializedatetimeformat","location":"","key":"InitializeDateTimeFormat"},{"type":"clause","id":"sec-initializedatetimeformat","aoid":"InitializeDateTimeFormat","title":"InitializeDateTimeFormat ( dateTimeFormat, locales, options )","titleHTML":"InitializeDateTimeFormat ( <var>dateTimeFormat</var>, <var>locales</var>, <var>options</var> )","number":"1.1.1","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"InitializeDateTimeFormat ( dateTimeFormat, locales, options )"},{"type":"op","aoid":"ToDateTimeOptions","refId":"sec-todatetimeoptions","location":"","key":"ToDateTimeOptions"},{"type":"clause","id":"sec-todatetimeoptions","aoid":"ToDateTimeOptions","title":"ToDateTimeOptions ( options, required, defaults )","titleHTML":"ToDateTimeOptions ( <var>options</var>, <var>required</var>, <var>defaults</var> )","number":"1.1.2","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"ToDateTimeOptions ( options, required, defaults )"},{"type":"op","aoid":"BasicFormatMatcher","refId":"sec-basicformatmatcher","location":"","key":"BasicFormatMatcher"},{"type":"clause","id":"sec-basicformatmatcher","aoid":"BasicFormatMatcher","title":"BasicFormatMatcher ( options, formats )","titleHTML":"BasicFormatMatcher ( <var>options</var>, <var>formats</var> )","number":"1.1.3","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"BasicFormatMatcher ( options, formats )"},{"type":"op","aoid":"BestFitFormatMatcher","refId":"sec-bestfitformatmatcher","location":"","key":"BestFitFormatMatcher"},{"type":"clause","id":"sec-bestfitformatmatcher","aoid":"BestFitFormatMatcher","title":"BestFitFormatMatcher ( options, formats )","titleHTML":"BestFitFormatMatcher ( <var>options</var>, <var>formats</var> )","number":"1.1.4","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"BestFitFormatMatcher ( options, formats )"},{"type":"clause","id":"sec-datetime-format-functions","aoid":null,"title":"DateTime Format Functions","titleHTML":"DateTime Format Functions","number":"1.1.5","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"DateTime Format Functions"},{"type":"op","aoid":"PartitionDateTimePattern","refId":"sec-partitiondatetimepattern","location":"","key":"PartitionDateTimePattern"},{"type":"clause","id":"sec-partitiondatetimepattern","aoid":"PartitionDateTimePattern","title":"PartitionDateTimePattern ( dateTimeFormat, x )","titleHTML":"PartitionDateTimePattern ( <var>dateTimeFormat</var>, <var>x</var> )","number":"1.1.6","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"PartitionDateTimePattern ( dateTimeFormat, x )"},{"type":"op","aoid":"FormatDateTime","refId":"sec-formatdatetime","location":"","key":"FormatDateTime"},{"type":"clause","id":"sec-formatdatetime","aoid":"FormatDateTime","title":"FormatDateTime( dateTimeFormat, x )","titleHTML":"FormatDateTime( <var>dateTimeFormat</var>, <var>x</var> )","number":"1.1.7","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"FormatDateTime( dateTimeFormat, x )"},{"type":"op","aoid":"FormatDateTimeToparts","refId":"sec-formatdatetimetoparts","location":"","key":"FormatDateTimeToparts"},{"type":"clause","id":"sec-formatdatetimetoparts","aoid":"FormatDateTimeToparts","title":"FormatDateTimeToParts ( dateTimeFormat, x )","titleHTML":"FormatDateTimeToParts ( <var>dateTimeFormat</var>, <var>x</var> )","number":"1.1.8","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"FormatDateTimeToParts ( dateTimeFormat, x )"},{"type":"op","aoid":"ToLocalTime","refId":"sec-tolocaltime","location":"","key":"ToLocalTime"},{"type":"clause","id":"sec-tolocaltime","aoid":"ToLocalTime","title":"ToLocalTime ( date, calendar, timeZone )","titleHTML":"ToLocalTime ( <var>date</var>, <var>calendar</var>, <var>timeZone</var> )","number":"1.1.9","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"ToLocalTime ( date, calendar, timeZone )"},{"type":"clause","id":"sec-datetimeformat-abstracts","aoid":null,"title":"Abstract Operations For DateTimeFormat Objects","titleHTML":"Abstract Operations For DateTimeFormat Objects","number":"1.1","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Abstract Operations For DateTimeFormat Objects"},{"type":"term","term":"%DateTimeFormat%","refId":"sec-intl-datetimeformat-constructor","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"%DateTimeFormat%"},{"type":"clause","id":"sec-intl.datetimeformat","aoid":null,"title":"Intl.DateTimeFormat ( [ locales [ , options ] ] )","titleHTML":"Intl.DateTimeFormat ( [ <var>locales</var> [ , <var>options</var> ] ] )","number":"1.2.1","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat ( [ locales [ , options ] ] )"},{"type":"clause","id":"sec-intl-datetimeformat-constructor","aoid":null,"title":"The Intl.DateTimeFormat Constructor","titleHTML":"The Intl.DateTimeFormat Constructor","number":"1.2","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"The Intl.DateTimeFormat Constructor"},{"type":"clause","id":"sec-intl.datetimeformat.prototype","aoid":null,"title":"Intl.DateTimeFormat.prototype","titleHTML":"Intl.DateTimeFormat.prototype","number":"1.3.1","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat.prototype"},{"type":"clause","id":"sec-intl.datetimeformat.supportedlocalesof","aoid":null,"title":"Intl.DateTimeFormat.supportedLocalesOf ( locales [ , options ] )","titleHTML":"Intl.DateTimeFormat.supportedLocalesOf ( <var>locales</var> [ , <var>options</var> ] )","number":"1.3.2","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat.supportedLocalesOf ( locales [ , options ] )"},{"type":"clause","id":"sec-intl.datetimeformat-internal-slots","aoid":null,"title":"Internal slots","titleHTML":"Internal slots","number":"1.3.3","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Internal slots"},{"type":"clause","id":"sec-properties-of-intl-datetimeformat-constructor","aoid":null,"title":"Properties of the Intl.DateTimeFormat Constructor","titleHTML":"Properties of the Intl.DateTimeFormat Constructor","number":"1.3","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Properties of the Intl.DateTimeFormat Constructor"},{"type":"term","term":"%DateTimeFormatPrototype%","refId":"sec-properties-of-intl-datetimeformat-prototype-object","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"%DateTimeFormatPrototype%"},{"type":"clause","id":"sec-intl.datetimeformat.prototype.constructor","aoid":null,"title":"Intl.DateTimeFormat.prototype.constructor","titleHTML":"Intl.DateTimeFormat.prototype.constructor","number":"1.4.1","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat.prototype.constructor"},{"type":"clause","id":"sec-intl.datetimeformat.prototype-@@tostringtag","aoid":null,"title":"Intl.DateTimeFormat.prototype [ @@toStringTag ]","titleHTML":"Intl.DateTimeFormat.prototype [ @@toStringTag ]","number":"1.4.2","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat.prototype [ @@toStringTag ]"},{"type":"clause","id":"sec-intl.datetimeformat.prototype.format","aoid":null,"title":"get Intl.DateTimeFormat.prototype.format","titleHTML":"get Intl.DateTimeFormat.prototype.format","number":"1.4.3","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"get Intl.DateTimeFormat.prototype.format"},{"type":"clause","id":"sec-Intl.DateTimeFormat.prototype.formatToParts","aoid":null,"title":"Intl.DateTimeFormat.prototype.formatToParts ( [ date ] )","titleHTML":"Intl.DateTimeFormat.prototype.formatToParts ( [ <var>date</var> ] )","number":"1.4.4","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat.prototype.formatToParts ( [ date ] )"},{"type":"clause","id":"sec-intl.datetimeformat.prototype.resolvedoptions","aoid":null,"title":"Intl.DateTimeFormat.prototype.resolvedOptions ()","titleHTML":"Intl.DateTimeFormat.prototype.resolvedOptions ()","number":"1.4.5","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Intl.DateTimeFormat.prototype.resolvedOptions ()"},{"type":"clause","id":"sec-properties-of-intl-datetimeformat-prototype-object","aoid":null,"title":"Properties of the Intl.DateTimeFormat Prototype Object","titleHTML":"Properties of the Intl.DateTimeFormat Prototype Object","number":"1.4","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Properties of the Intl.DateTimeFormat Prototype Object"},{"type":"clause","id":"sec-properties-of-intl-datetimeformat-instances","aoid":null,"title":"Properties of Intl.DateTimeFormat Instances","titleHTML":"Properties of Intl.DateTimeFormat Instances","number":"1.5","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"Properties of Intl.DateTimeFormat Instances"},{"type":"clause","id":"datetimeformat-objects","aoid":null,"title":"DateTimeFormat Objects","titleHTML":"DateTimeFormat Objects","number":"1","namespace":"https://zbraniecki.github.io/proposal-ecma402-hourcycle/","location":"","key":"DateTimeFormat Objects"}]</script></head><body><div id="menu-toggle">☰</div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle-none"></span><a href="#" title="Introduction"><span class="secnum"></span> Introduction</a></li><li><span class="item-toggle">◢</span><a href="#datetimeformat-objects" title="DateTimeFormat Objects"><span class="secnum">1</span> DateTimeFormat Objects</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-datetimeformat-abstracts" title="Abstract Operations For DateTimeFormat Objects"><span class="secnum">1.1</span> Abstract Operations For DateTimeFormat Objects</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-initializedatetimeformat" title="InitializeDateTimeFormat ( dateTimeFormat, locales, options )"><span class="secnum">1.1.1</span> InitializeDateTimeFormat ( <var>dateTimeFormat</var>, <var>locales</var>, <var>options</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-todatetimeoptions" title="ToDateTimeOptions ( options, required, defaults )"><span class="secnum">1.1.2</span> ToDateTimeOptions ( <var>options</var>, <var>required</var>, <var>defaults</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-basicformatmatcher" title="BasicFormatMatcher ( options, formats )"><span class="secnum">1.1.3</span> BasicFormatMatcher ( <var>options</var>, <var>formats</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-bestfitformatmatcher" title="BestFitFormatMatcher ( options, formats )"><span class="secnum">1.1.4</span> BestFitFormatMatcher ( <var>options</var>, <var>formats</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-datetime-format-functions" title="DateTime Format Functions"><span class="secnum">1.1.5</span> DateTime Format Functions</a></li><li><span class="item-toggle-none"></span><a href="#sec-partitiondatetimepattern" title="PartitionDateTimePattern ( dateTimeFormat, x )"><span class="secnum">1.1.6</span> PartitionDateTimePattern ( <var>dateTimeFormat</var>, <var>x</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-formatdatetime" title="FormatDateTime( dateTimeFormat, x )"><span class="secnum">1.1.7</span> FormatDateTime( <var>dateTimeFormat</var>, <var>x</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-formatdatetimetoparts" title="FormatDateTimeToParts ( dateTimeFormat, x )"><span class="secnum">1.1.8</span> FormatDateTimeToParts ( <var>dateTimeFormat</var>, <var>x</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-tolocaltime" title="ToLocalTime ( date, calendar, timeZone )"><span class="secnum">1.1.9</span> ToLocalTime ( <var>date</var>, <var>calendar</var>, <var>timeZone</var> )</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-intl-datetimeformat-constructor" title="The Intl.DateTimeFormat Constructor"><span class="secnum">1.2</span> The Intl.DateTimeFormat Constructor</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat" title="Intl.DateTimeFormat ( [ locales [ , options ] ] )"><span class="secnum">1.2.1</span> Intl.DateTimeFormat ( [ <var>locales</var> [ , <var>options</var> ] ] )</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-properties-of-intl-datetimeformat-constructor" title="Properties of the Intl.DateTimeFormat Constructor"><span class="secnum">1.3</span> Properties of the Intl.DateTimeFormat Constructor</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat.prototype" title="Intl.DateTimeFormat.prototype"><span class="secnum">1.3.1</span> Intl.DateTimeFormat.prototype</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat.supportedlocalesof" title="Intl.DateTimeFormat.supportedLocalesOf ( locales [ , options ] )"><span class="secnum">1.3.2</span> Intl.DateTimeFormat.supportedLocalesOf ( <var>locales</var> [ , <var>options</var> ] )</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat-internal-slots" title="Internal slots"><span class="secnum">1.3.3</span> Internal slots</a></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-properties-of-intl-datetimeformat-prototype-object" title="Properties of the Intl.DateTimeFormat Prototype Object"><span class="secnum">1.4</span> Properties of the Intl.DateTimeFormat Prototype Object</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat.prototype.constructor" title="Intl.DateTimeFormat.prototype.constructor"><span class="secnum">1.4.1</span> Intl.DateTimeFormat.prototype.constructor</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat.prototype-@@tostringtag" title="Intl.DateTimeFormat.prototype [ @@toStringTag ]"><span class="secnum">1.4.2</span> Intl.DateTimeFormat.prototype [ @@toStringTag ]</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat.prototype.format" title="get Intl.DateTimeFormat.prototype.format"><span class="secnum">1.4.3</span> get Intl.DateTimeFormat.prototype.format</a></li><li><span class="item-toggle-none"></span><a href="#sec-Intl.DateTimeFormat.prototype.formatToParts" title="Intl.DateTimeFormat.prototype.formatToParts ( [ date ] )"><span class="secnum">1.4.4</span> Intl.DateTimeFormat.prototype.formatToParts ( [ <var>date</var> ] )</a></li><li><span class="item-toggle-none"></span><a href="#sec-intl.datetimeformat.prototype.resolvedoptions" title="Intl.DateTimeFormat.prototype.resolvedOptions ()"><span class="secnum">1.4.5</span> Intl.DateTimeFormat.prototype.resolvedOptions ()</a></li></ol></li><li><span class="item-toggle-none"></span><a href="#sec-properties-of-intl-datetimeformat-instances" title="Properties of Intl.DateTimeFormat Instances"><span class="secnum">1.5</span> Properties of Intl.DateTimeFormat Instances</a></li></ol></li></ol></div></div><h1 class="version">Stage 0 Draft / October 15, 2016</h1><h1 class="title">hourCycle option</h1>
+<script src="https://bterlson.github.io/ecmarkup/ecmarkup.js" defer=""></script>
+<link rel="stylesheet" href="https://bterlson.github.io/ecmarkup/elements.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_light.min.css">
+
+<emu-intro>
+  <h1><span class="secnum"></span>Introduction<span class="utils"><span class="anchor"><a href="#">#</a></span></span></h1>
+</emu-intro>
+<emu-clause id="datetimeformat-objects">
+  <h1><span class="secnum">1</span>DateTimeFormat Objects<span class="utils"><span class="anchor"><a href="#datetimeformat-objects">#</a></span></span></h1>
+  <emu-clause id="sec-datetimeformat-abstracts">
+    <h1><span class="secnum">1.1</span>Abstract Operations For DateTimeFormat Objects<span class="utils"><span class="anchor"><a href="#sec-datetimeformat-abstracts">#</a></span></span></h1>
+
+    <p>
+      Several DateTimeFormat algorithms use values from the following table, which provides property names and allowable values for the components of date and time formats:
+    
+    </p>
+
+    <emu-table id="table-datetimeformat-components"><figure><figcaption>Table 1: Components of date and time formats</figcaption>
+      
+      <table class="real-table">
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Values</th>
+          </tr>
+        </thead>
+        <tbody><tr>
+          <td>weekday</td>
+          <td>"narrow", "short", "long"</td>
+        </tr>
+        <tr>
+          <td>era</td>
+          <td>"narrow", "short", "long"</td>
+        </tr>
+        <tr>
+          <td>year</td>
+          <td>"2-digit", "numeric"</td>
+        </tr>
+        <tr>
+          <td>month</td>
+          <td>"2-digit", "numeric", "narrow", "short", "long"</td>
+        </tr>
+        <tr>
+          <td>day</td>
+          <td>"2-digit", "numeric"</td>
+        </tr>
+        <tr>
+          <td>hour</td>
+          <td>"2-digit", "numeric"</td>
+        </tr>
+        <tr>
+          <td>minute</td>
+          <td>"2-digit", "numeric"</td>
+        </tr>
+        <tr>
+          <td>second</td>
+          <td>"2-digit", "numeric"</td>
+        </tr>
+        <tr>
+          <td>timeZoneName</td>
+          <td>"short", "long"</td>
+        </tr>
+      </tbody></table>
+    </figure></emu-table>
+    <emu-clause id="sec-initializedatetimeformat" aoid="InitializeDateTimeFormat">
+      <h1><span class="secnum">1.1.1</span>InitializeDateTimeFormat ( <var>dateTimeFormat</var>, <var>locales</var>, <var>options</var> )<span class="utils"><span class="anchor"><a href="#sec-initializedatetimeformat">#</a></span></span></h1>
+
+      <p>
+        The abstract operation InitializeDateTimeFormat accepts the arguments <var>dateTimeFormat</var> (which must be an object), <var>locales</var>, and <var>options</var>. It initializes <var>dateTimeFormat</var> as a DateTimeFormat object. This abstract operation functions as follows:
+      
+      </p>
+
+      <emu-alg><ol><li>If <var>dateTimeFormat</var>.[[initializedIntlObject]] is <emu-val>true</emu-val>, throw a <emu-val>TypeError</emu-val> exception.</li><li>Set <var>dateTimeFormat</var>.[[initializedIntlObject]] to <emu-val>true</emu-val>.</li><li>Let <var>requestedLocales</var> be ? CanonicalizeLocaleList(<var>locales</var>).</li><li>Let <var>options</var> be ? <emu-xref aoid="ToDateTimeOptions"><a href="#sec-todatetimeoptions">ToDateTimeOptions</a></emu-xref>(<var>options</var>, <emu-val>"any"</emu-val>, <emu-val>"date"</emu-val>).</li><li>Let <var>opt</var> be a new <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">Record</a></emu-xref>.</li><li>Let <var>matcher</var> be ? GetOption(<var>options</var>, <emu-val>"localeMatcher"</emu-val>, <emu-val>"string"</emu-val>, « <emu-val>"lookup"</emu-val>, <emu-val>"best fit"</emu-val> », <emu-val>"best fit"</emu-val>).</li><li>Set <var>opt</var>.[[localeMatcher]] to <var>matcher</var>.</li><li>Let <var>localeData</var> be <emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref>.[[localeData]].</li><li>Let <var>r</var> be ResolveLocale( <emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref>.[[availableLocales]], <var>requestedLocales</var>, <var>opt</var>, <emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref>.[[relevantExtensionKeys]], <var>localeData</var>).</li><li>Set <var>dateTimeFormat</var>.[[locale]] to <var>r</var>.[[locale]].</li><li>Set <var>dateTimeFormat</var>.[[calendar]] to <var>r</var>.[[ca]].</li><li><ins>Set <var>dateTimeFormat</var>.[[hourCycle]] to <var>r</var>.[[hc]].</ins></li><li>Set <var>dateTimeFormat</var>.[[numberingSystem]] to <var>r</var>.[[nu]].</li><li>Let <var>dataLocale</var> be <var>r</var>.[[dataLocale]].</li><li>Let <var>tz</var> be ? <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>options</var>, <emu-val>"timeZone"</emu-val>).</li><li>If <var>tz</var> is not <emu-val>undefined</emu-val>, then<ol><li>Let <var>tz</var> be ? <emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>tz</var>).</li><li>If the result of IsValidTimeZoneName(<var>tz</var>) is <emu-val>false</emu-val>, then<ol><li>Throw a <emu-val>RangeError</emu-val> exception.</li></ol></li><li>Let <var>tz</var> be CanonicalizeTimeZoneName(<var>tz</var>).</li></ol></li><li>Else,<ol><li>Let <var>tz</var> be DefaultTimeZone().</li></ol></li><li>Set <var>dateTimeFormat</var>.[[timeZone]] to <var>tz</var>.</li><li>Let <var>opt</var> be a new <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">Record</a></emu-xref>.</li><li>For each row of <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>, except the header row, do:<ol><li>Let <var>prop</var> be the name given in the Property column of the row.</li><li>Let <var>value</var> be ? GetOption(<var>options</var>, <var>prop</var>, <emu-val>"string"</emu-val>, « the strings given in the Values column of the row », <emu-val>undefined</emu-val>).</li><li>Set <var>opt</var>.[[&lt;<var>prop</var>&gt;]] to <var>value</var>.</li></ol></li><li>Let <var>dataLocaleData</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>localeData</var>, <var>dataLocale</var>).</li><li>Let <var>formats</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>dataLocaleData</var>, <emu-val>"formats"</emu-val>).</li><li>Let <var>matcher</var> be ? GetOption(<var>options</var>, <emu-val>"formatMatcher"</emu-val>, <emu-val>"string"</emu-val>, « <emu-val>"basic"</emu-val>, <emu-val>"best fit"</emu-val> », <emu-val>"best fit"</emu-val>).</li><li>If <var>matcher</var> is <emu-val>"basic"</emu-val>, then<ol><li>Let <var>bestFormat</var> be <emu-xref aoid="BasicFormatMatcher"><a href="#sec-basicformatmatcher">BasicFormatMatcher</a></emu-xref>(<var>opt</var>, <var>formats</var>).</li></ol></li><li>Else,<ol><li>Let <var>bestFormat</var> be <emu-xref aoid="BestFitFormatMatcher"><a href="#sec-bestfitformatmatcher">BestFitFormatMatcher</a></emu-xref>(<var>opt</var>, <var>formats</var>).</li></ol></li><li>For each row in <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>, except the header row, do<ol><li>Let <var>prop</var> be the name given in the Property column of the row.</li><li>Let <var>p</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>bestFormat</var>, <var>prop</var>).</li><li>If <var>p</var> not <emu-val>undefined</emu-val>, then<ol><li>Set <var>dateTimeFormat</var>.[[&lt;<var>prop</var>&gt;]] to <var>p</var>.</li></ol></li></ol></li><li><del>Let <var>hr12</var> be ? GetOption(<var>options</var>, <emu-val>"hour12"</emu-val>, <emu-val>"boolean"</emu-val>, <emu-val>undefined</emu-val>, <emu-val>undefined</emu-val>).</del></li><li>If <var>dateTimeFormat</var> has an internal slot [[hour]], then<ol><li><del>If <var>hr12</var> is <emu-val>undefined</emu-val>, then</del><ol><li><del>Let <var>hr12</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>dataLocaleData</var>, <emu-val>"hour12"</emu-val>).</del></li></ol></li><li><del>Set <var>dateTimeFormat</var>.[[hour12]] to <var>hr12</var>.</del></li><li><ins>Let <var>hc</var> be ? GetOption(<var>options</var>, <emu-val>"hourCycle"</emu-val>, <emu-val>"string"</emu-val>, « <emu-val>"h12"</emu-val>, <emu-val>"h24"</emu-val> », <emu-val>undefined</emu-val>).</ins></li><li><ins>Let <var>hr12</var> be ? GetOption(<var>options</var>, <emu-val>"hour12"</emu-val>, <emu-val>"boolean"</emu-val>, <emu-val>undefined</emu-val>, <emu-val>undefined</emu-val>).</ins></li><li>If <var>hr12</var> is <emu-val>true</emu-val>, then<ol><li><ins>Set <var>hc</var> to <emu-val>"h12"</emu-val>.</ins></li></ol></li><li><ins>Else, if <var>hr12</var> is <emu-val>false</emu-val>, then</ins><ol><li><ins>Set <var>hc</var> to <emu-val>"h24"</emu-val>.</ins></li></ol></li><li><ins>If <var>hc</var> is not <emu-val>undefined</emu-val>, then</ins><ol><li><ins>Set <var>dateTimeFormat</var>.[[hourCycle]] to <var>hc</var>.</ins></li></ol></li><li><ins>If <var>dateTimeformat</var>.[[hourCycle]] is <emu-val>"h12"</emu-val>, then</ins><ol><li>Let <var>hourNo0</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>dataLocaleData</var>, <emu-val>"hourNo0"</emu-val>).</li><li>Set <var>dateTimeFormat</var>.[[hourNo0]] to <var>hourNo0</var>.</li><li>Let <var>pattern</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>bestFormat</var>, <emu-val>"pattern12"</emu-val>).</li></ol></li><li>Else,<ol><li>Let <var>pattern</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>bestFormat</var>, <emu-val>"pattern"</emu-val>).</li></ol></li></ol></li><li>Else,<ol><li>Let <var>pattern</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>bestFormat</var>, <emu-val>"pattern"</emu-val>).</li></ol></li><li>Set <var>dateTimeFormat</var>.[[pattern]] to <var>pattern</var>.</li><li>Set <var>dateTimeFormat</var>.[[boundFormat]] to <emu-val>undefined</emu-val>.</li><li>Set <var>dateTimeFormat</var>.[[initializedDateTimeFormat]] to <emu-val>true</emu-val>.</li><li>Return <var>dateTimeFormat</var>.
+      </li></ol></emu-alg>
+    </emu-clause>
+    <emu-clause id="sec-todatetimeoptions" aoid="ToDateTimeOptions">
+      <h1><span class="secnum">1.1.2</span>ToDateTimeOptions ( <var>options</var>, <var>required</var>, <var>defaults</var> )<span class="utils"><span class="anchor"><a href="#sec-todatetimeoptions">#</a></span></span></h1>
+
+      <p>
+        When the ToDateTimeOptions abstract operation is called with arguments <var>options</var>, <var>required</var>, and <var>defaults</var>, the following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>If <var>options</var> is <emu-val>undefined</emu-val>, let <var>options</var> be <emu-val>null</emu-val>; otherwise let <var>options</var> be ? <emu-xref aoid="ToObject"><a href="https://tc39.github.io/ecma262/#sec-toobject">ToObject</a></emu-xref>(<var>options</var>).</li><li>Let <var>options</var> be <emu-xref aoid="ObjectCreate"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<var>options</var>).</li><li>Let <var>needDefaults</var> be <emu-val>true</emu-val>.</li><li>If <var>required</var> is <emu-val>"date"</emu-val> or <emu-val>"any"</emu-val>,<ol><li>For each of the property names <emu-val>"weekday"</emu-val>, <emu-val>"year"</emu-val>, <emu-val>"month"</emu-val>, <emu-val>"day"</emu-val>:<ol><li>Let <var>prop</var> be the property name.</li><li>Let <var>value</var> be ? <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>options</var>, <var>prop</var>).</li><li>If <var>value</var> is not <emu-val>undefined</emu-val>, let <var>needDefaults</var> be <emu-val>false</emu-val>.</li></ol></li></ol></li><li>If <var>required</var> is <emu-val>"time"</emu-val> or <emu-val>"any"</emu-val>,<ol><li>For each of the property names <emu-val>"hour"</emu-val>, <emu-val>"minute"</emu-val>, <emu-val>"second"</emu-val>:<ol><li>Let <var>prop</var> be the property name.</li><li>Let <var>value</var> be ? <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>options</var>, <var>prop</var>).</li><li>If <var>value</var> is not <emu-val>undefined</emu-val>, let <var>needDefaults</var> be <emu-val>false</emu-val>.</li></ol></li></ol></li><li>If <var>needDefaults</var> is <emu-val>true</emu-val> and <var>defaults</var> is either <emu-val>"date"</emu-val> or <emu-val>"all"</emu-val>, then<ol><li>For each of the property names <emu-val>"year"</emu-val>, <emu-val>"month"</emu-val>, <emu-val>"day"</emu-val>:<ol><li>Perform ? <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>options</var>, <var>prop</var>, <emu-val>"numeric"</emu-val>).</li></ol></li></ol></li><li>If <var>needDefaults</var> is <emu-val>true</emu-val> and <var>defaults</var> is either <emu-val>"time"</emu-val> or <emu-val>"all"</emu-val>, then<ol><li>For each of the property names <emu-val>"hour"</emu-val>, <emu-val>"minute"</emu-val>, <emu-val>"second"</emu-val>:<ol><li>Perform ? <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>options</var>, <var>prop</var>, <emu-val>"numeric"</emu-val>).</li></ol></li></ol></li><li>Return <var>options</var>.
+      </li></ol></emu-alg>
+    </emu-clause>
+
+    <emu-clause id="sec-basicformatmatcher" aoid="BasicFormatMatcher">
+      <h1><span class="secnum">1.1.3</span>BasicFormatMatcher ( <var>options</var>, <var>formats</var> )<span class="utils"><span class="anchor"><a href="#sec-basicformatmatcher">#</a></span></span></h1>
+
+      <p>
+        When the BasicFormatMatcher abstract operation is called with two arguments <var>options</var> and <var>formats</var>, the following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>removalPenalty</var> be 120.</li><li>Let <var>additionPenalty</var> be 20.</li><li>Let <var>longLessPenalty</var> be 8.</li><li>Let <var>longMorePenalty</var> be 6.</li><li>Let <var>shortLessPenalty</var> be 6.</li><li>Let <var>shortMorePenalty</var> be 3.</li><li>Let <var>bestScore</var> be -<emu-val>Infinity</emu-val>.</li><li>Let <var>bestFormat</var> be <emu-val>undefined</emu-val>.</li><li>Let <var>k</var> be 0.</li><li>Assert: <var>formats</var> is an Array object.</li><li>Let <var>len</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>formats</var>, <emu-val>"length"</emu-val>).</li><li>Repeat while <var>k</var> &lt; <var>len</var>:<ol><li>Let <var>format</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>formats</var>, <emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>k</var>)).</li><li>Let <var>score</var> be 0.</li><li>For each <var>property</var> shown in <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>:<ol><li>Let <var>optionsProp</var> be <var>options</var>.[[&lt;<var>property</var>&gt;]].</li><li>Let <var>formatProp</var> be <emu-xref aoid="Get"><a href="https://tc39.github.io/ecma262/#sec-get-o-p">Get</a></emu-xref>(<var>format</var>, <var>property</var>).</li><li>If <var>optionsProp</var> is <emu-val>undefined</emu-val> and <var>formatProp</var> is not <emu-val>undefined</emu-val>, then decrease <var>score</var> by <var>additionPenalty</var>.</li><li>Else if <var>optionsProp</var> is not <emu-val>undefined</emu-val> and <var>formatProp</var> is <emu-val>undefined</emu-val>, then decrease <var>score</var> by <var>removalPenalty</var>.</li><li>Else if <var>optionsProp</var> ≠ <var>formatProp</var>,<ol><li>Let <var>values</var> be the array [<emu-val>"2-digit"</emu-val>, <emu-val>"numeric"</emu-val>, <emu-val>"narrow"</emu-val>, <emu-val>"short"</emu-val>, <emu-val>"long"</emu-val>].</li><li>Let <var>optionsPropIndex</var> be the index of <var>optionsProp</var> within <var>values</var>.</li><li>Let <var>formatPropIndex</var> be the index of <var>formatProp</var> within <var>values</var>.</li><li>Let <var>delta</var> be <emu-xref aoid="max"><a href="https://tc39.github.io/ecma262/#sec-algorithm-conventions">max</a></emu-xref>(<emu-xref aoid="min"><a href="https://tc39.github.io/ecma262/#sec-algorithm-conventions">min</a></emu-xref>(<var>formatPropIndex</var> - <var>optionsPropIndex</var>, 2), -2).</li><li>If <var>delta</var> = 2, decrease <var>score</var> by <var>longMorePenalty</var>.</li><li>Else if <var>delta</var> = 1, decrease <var>score</var> by <var>shortMorePenalty</var>.</li><li>Else if <var>delta</var> = -1, decrease <var>score</var> by <var>shortLessPenalty</var>.</li><li>Else if <var>delta</var> = -2, decrease <var>score</var> by <var>longLessPenalty</var>.</li></ol></li></ol></li><li>If <var>score</var> &gt; <var>bestScore</var>,<ol><li>Let <var>bestScore</var> be <var>score</var>.</li><li>Let <var>bestFormat</var> be <var>format</var>.</li></ol></li><li>Increase <var>k</var> by 1.</li></ol></li><li>Return <var>bestFormat</var>.
+      </li></ol></emu-alg>
+    </emu-clause>
+
+    <emu-clause id="sec-bestfitformatmatcher" aoid="BestFitFormatMatcher">
+      <h1><span class="secnum">1.1.4</span>BestFitFormatMatcher ( <var>options</var>, <var>formats</var> )<span class="utils"><span class="anchor"><a href="#sec-bestfitformatmatcher">#</a></span></span></h1>
+
+      <p>
+        When the BestFitFormatMatcher abstract operation is called with two arguments <var>options</var> and <var>formats</var>, it performs implementation dependent steps, which should return a set of component representations that a typical user of the selected locale would perceive as at least as good as the one returned by <emu-xref aoid="BasicFormatMatcher"><a href="#sec-basicformatmatcher">BasicFormatMatcher</a></emu-xref>.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-datetime-format-functions">
+      <h1><span class="secnum">1.1.5</span>DateTime Format Functions<span class="utils"><span class="anchor"><a href="#sec-datetime-format-functions">#</a></span></span></h1>
+
+      <p>A DateTime format function is an anonymous built-in function.</p>
+      <p>When a DateTime format function is called with optional argument <var>date</var>, the following steps are taken:</p>
+
+      <emu-alg><ol><li>Let <var>dtf</var> be the <emu-val>this</emu-val> value.</li><li>Assert: <emu-xref aoid="Type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>dtf</var>) is Object and <var>dtf</var>.[[initializedDateTimeFormat]] is <emu-val>true</emu-val>.</li><li>If <var>date</var> is not provided or is <emu-val>undefined</emu-val>, then<ol><li>Let <var>x</var> be <emu-xref aoid="Call"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(%Date_now%, <emu-val>undefined</emu-val>).</li></ol></li><li>Else,<ol><li>Let <var>x</var> be ? <emu-xref aoid="ToNumber"><a href="https://tc39.github.io/ecma262/#sec-tonumber">ToNumber</a></emu-xref>(<var>date</var>).</li></ol></li><li>Return <emu-xref aoid="FormatDateTime"><a href="#sec-formatdatetime">FormatDateTime</a></emu-xref>(<var>dtf</var>, <var>x</var>).
+      </li></ol></emu-alg>
+
+      <emu-note><span class="note">Note</span>
+        The function returned by [[Get]] is bound to this DateTimeFormat object so that it can be passed directly to Array.prototype.map or other functions.
+      
+      </emu-note>
+
+      <p>
+        The <code>length</code> property of a DateTime format function is 1.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-partitiondatetimepattern" aoid="PartitionDateTimePattern">
+      <h1><span class="secnum">1.1.6</span>PartitionDateTimePattern ( <var>dateTimeFormat</var>, <var>x</var> )<span class="utils"><span class="anchor"><a href="#sec-partitiondatetimepattern">#</a></span></span></h1>
+
+      <p>
+        The PartitionDateTimePattern abstract operation is called with arguments <var>dateTimeFormat</var> (which must be an object initialized as a DateTimeFormat) and <var>x</var> (which must be a Number value), interprets <var>x</var> as a <emu-xref href="#sec-time-values-and-time-range"><a href="https://tc39.github.io/ecma262/#sec-time-values-and-time-range">time value</a></emu-xref> as specified in ES2015,  <emu-xref href="#sec-time-values-and-time-range"><a href="https://tc39.github.io/ecma262/#sec-time-values-and-time-range">20.3.1.1</a></emu-xref>, and creates the corresponding parts according to the effective locale and the formatting options of <var>dateTimeFormat</var>. The following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>If <var>x</var> is not a finite Number, throw a <emu-val>RangeError</emu-val> exception.</li><li>Let <var>locale</var> be <var>dateTimeFormat</var>.[[locale]].</li><li>Let <var>nfLocale</var> be <emu-xref aoid="CreateArrayFromList"><a href="https://tc39.github.io/ecma262/#sec-createarrayfromlist">CreateArrayFromList</a></emu-xref>(« <var>locale</var> »).</li><li>Let <var>nfOptions</var> be <emu-xref aoid="ObjectCreate"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<emu-xref href="#sec-properties-of-the-object-prototype-object"><a href="https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object">%ObjectPrototype%</a></emu-xref>).</li><li>Perform ! <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>nfOptions</var>, <code>"useGrouping"</code>, <emu-val>false</emu-val>).</li><li>Let <var>nf</var> be ? <emu-xref aoid="Construct"><a href="https://tc39.github.io/ecma262/#sec-construct">Construct</a></emu-xref>(%NumberFormat%, « <var>nfLocale</var>, <var>nfOptions</var> »).</li><li>Let <var>nf2Options</var> be <emu-xref aoid="ObjectCreate"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<emu-xref href="#sec-properties-of-the-object-prototype-object"><a href="https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object">%ObjectPrototype%</a></emu-xref>).</li><li>Perform ! <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>nf2Options</var>, <code>"minimumIntegerDigits"</code>, 2).</li><li>Perform ! <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>nf2Options</var>, <code>"useGrouping"</code>, <emu-val>false</emu-val>).</li><li>Let <var>nf2</var> be ? <emu-xref aoid="Construct"><a href="https://tc39.github.io/ecma262/#sec-construct">Construct</a></emu-xref>(%NumberFormat%, « <var>nfLocale</var>, <var>nf2Options</var> »).</li><li>Let <var>tm</var> be <emu-xref aoid="ToLocalTime"><a href="#sec-tolocaltime">ToLocalTime</a></emu-xref>(<var>x</var>, <var>dateTimeFormat</var>.[[calendar]], <var>dateTimeFormat</var>.[[timeZone]]).</li><li>Let <var>pattern</var> be <var>dateTimeFormat</var>.[[pattern]].</li><li>Let <var>result</var> be a new empty <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">List</a></emu-xref>.</li><li>Let <var>beginIndex</var> be <emu-xref aoid="Call"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(%StringProto_indexOf%, <var>pattern</var>, "{", <emu-val>0</emu-val>).</li><li>Let <var>endIndex</var> be 0.</li><li>Let <var>nextIndex</var> be 0.</li><li>Let <var>length</var> be the number of code units in <var>pattern</var>.</li><li>Repeat while <var>beginIndex</var> is an integer index into <var>pattern</var>:<ol><li>Set <var>endIndex</var> to <emu-xref aoid="Call"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(%StringProto_indexOf%, <var>pattern</var>, "}", <var>beginIndex</var>)</li><li>If <var>endIndex</var> = -1, throw new Error exception.</li><li>If <var>beginIndex</var> is greater than <var>nextIndex</var>, then:<ol><li>Let <var>literal</var> be a substring of <var>pattern</var> from position <var>nextIndex</var>, inclusive, to position <var>beginIndex</var>, exclusive.</li><li>Add new part record { [[type]]: <emu-val>"literal"</emu-val>, [[value]]: <var>literal</var> } as a new element of the list <var>result</var>.</li></ol></li><li>Let <var>p</var> be the substring of <var>pattern</var> from position <var>beginIndex</var>, exclusive, to position <var>endIndex</var>, exclusive.</li><li>If <var>p</var> matches a Property column of the row in <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>, then:<ol><li>Let <var>f</var> be <var>dateTimeFormat</var>.[[&lt;<var>p</var>&gt;]].</li><li>Let <var>v</var> be <var>tm</var>.[[&lt;<var>p</var>&gt;]].</li><li>If <var>p</var> is <emu-val>"year"</emu-val> and <var>v</var> ≤ 0, let <var>v</var> be 1 - <var>v</var>.</li><li>If <var>p</var> is <emu-val>"month"</emu-val>, increase <var>v</var> by 1.</li><li>If <var>p</var> is <emu-val>"hour"</emu-val> and <var>dateTimeFormat</var>.[[hour12]] is <emu-val>true</emu-val>, then<ol><li>Let <var>v</var> be <var>v</var> <emu-xref aoid="modulo"><a href="https://tc39.github.io/ecma262/#sec-algorithm-conventions">modulo</a></emu-xref> 12.</li><li>If <var>v</var> is 0 and <var>dateTimeFormat</var>.[[hourNo0]] is <emu-val>true</emu-val>, let <var>v</var> be 12.</li></ol></li><li>If <var>f</var> is <emu-val>"numeric"</emu-val>, then<ol><li>Let <var>fv</var> be FormatNumber(<var>nf</var>, <var>v</var>).</li></ol></li><li>Else if <var>f</var> is <emu-val>"2-digit"</emu-val>, then<ol><li>Let <var>fv</var> be FormatNumber(<var>nf2</var>, <var>v</var>).</li><li>If the <code>length</code> property of <var>fv</var> is greater than 2, let <var>fv</var> be the substring of <var>fv</var> containing the last two characters.</li></ol></li><li>Else if <var>f</var> is <emu-val>"narrow"</emu-val>, <emu-val>"short"</emu-val>, or <emu-val>"long"</emu-val>, then let <var>fv</var> be a String value representing <var>f</var> in the desired form; the String value depends upon the implementation and the effective locale and calendar of <var>dateTimeFormat</var>. If <var>p</var> is <emu-val>"month"</emu-val>, then the String value may also depend on whether <var>dateTimeFormat</var> has a [[day]] internal slot. If <var>p</var> is <emu-val>"timeZoneName"</emu-val>, then the String value may also depend on the value of the [[inDST]] field of <var>tm</var>. If <var>p</var> is <emu-val>"era"</emu-val>, then the String value may also depend on whether <var>dateTimeFormat</var> has a [[era]] internal slot and if the implementation does not have a localized representation of <var>f</var>, then use <var>f</var> itself.</li><li>Add new part record { [[type]]: <var>p</var>, [[value]]: <var>fv</var> } as a new element of the list <var>result</var>.</li></ol></li><li>Else if <var>p</var> is equal "ampm", then:<ol><li>Let <var>v</var> be <var>tm</var>.[[hour]].</li><li>If <var>v</var> is greater than 11, then:<ol><li>Let <var>fv</var> be an implementation and locale dependent String value representing "post meridiem";</li></ol></li><li>Else,<ol><li>Let <var>fv</var> be an implementation and locale dependent String value representing "ante meridiem".</li></ol></li><li>Add new part record { [[type]]: <emu-val>"dayPeriod"</emu-val>, [[value]]: <var>fv</var> } as a new element of the list <var>result</var>.</li><li>Let <var>literal</var> be the substring of <var>pattern</var> from position <var>beginIndex</var>, inclusive, to position <var>endIndex</var>, inclusive.</li><li>Add new part record { [[type]]: <emu-val>"literal"</emu-val>, [[value]]: <var>literal</var> } as a new element of the list <var>result</var>.</li></ol></li><li>Set <var>nextIndex</var> to <var>endIndex</var> + 1.</li><li>Set <var>beginIndex</var> to <emu-xref aoid="Call"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(%StringProto_indexOf%, <var>pattern</var>, "}", <var>nextIndex</var>)</li></ol></li><li>If <var>nextIndex</var> is less than <var>length</var>, then:<ol><li>Let <var>literal</var> be the substring of <var>pattern</var> from position <var>nextIndex</var>, exclusive, to position <var>length</var>, exclusive.</li><li>Add new part record { [[type]]: <emu-val>"literal"</emu-val>, [[value]]: <var>literal</var> } as a new element of the list <var>result</var>.</li></ol></li><li>Return <var>result</var>.
+      </li></ol></emu-alg>
+
+      <emu-note><span class="note">Note 1</span>
+        It is recommended that implementations use the locale and calendar dependent strings provided by the Common Locale Data Repository (available at  <a href="http://cldr.unicode.org/">http://cldr.unicode.org/</a>), and use CLDR "abbreviated" strings for DateTimeFormat "short" strings, and CLDR "wide" strings for DateTimeFormat "long" strings.
+      
+      </emu-note>
+
+      <emu-note><span class="note">Note 2</span>
+        It is recommended that implementations use the time zone information of the IANA Time Zone Database.
+      
+      </emu-note>
+
+    </emu-clause>
+
+    <emu-clause id="sec-formatdatetime" aoid="FormatDateTime">
+      <h1><span class="secnum">1.1.7</span>FormatDateTime( <var>dateTimeFormat</var>, <var>x</var> )<span class="utils"><span class="anchor"><a href="#sec-formatdatetime">#</a></span></span></h1>
+
+      <p>
+        The FormatDateTime abstract operation is called with arguments <var>dateTimeFormat</var> (which must be an object initialized as a DateTimeFormat) and <var>x</var> (which must be a Number value), and performs the following steps:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>parts</var> be ? <emu-xref aoid="PartitionDateTimePattern"><a href="#sec-partitiondatetimepattern">PartitionDateTimePattern</a></emu-xref>(<var>dateTimeFormat</var>, <var>x</var>).</li><li>Let <var>result</var> be the empty String.</li><li>For each <var>part</var> in <var>parts</var>, do:<ol><li>Set <var>result</var> to a String value produced by concatenating <var>result</var> and <var>part</var>.[[value]].</li></ol></li><li>Return <var>result</var>.
+      </li></ol></emu-alg>
+
+    </emu-clause>
+
+    <emu-clause id="sec-formatdatetimetoparts" aoid="FormatDateTimeToparts">
+      <h1><span class="secnum">1.1.8</span>FormatDateTimeToParts ( <var>dateTimeFormat</var>, <var>x</var> )<span class="utils"><span class="anchor"><a href="#sec-formatdatetimetoparts">#</a></span></span></h1>
+
+      <p>
+        The FormatDateTimeToParts abstract operation is called with arguments <var>dateTimeFormat</var> (which must be an object initialized as a DateTimeFormat) and <var>x</var> (which must be a Number value), and performs the following steps:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>parts</var> be ? <emu-xref aoid="PartitionDateTimePattern"><a href="#sec-partitiondatetimepattern">PartitionDateTimePattern</a></emu-xref>(<var>dateTimeFormat</var>, <var>x</var>).</li><li>Let <var>result</var> be <emu-xref aoid="ArrayCreate"><a href="https://tc39.github.io/ecma262/#sec-arraycreate">ArrayCreate</a></emu-xref>(0).</li><li>Let <var>n</var> be 0.</li><li>For each <var>part</var> in <var>parts</var>, do:<ol><li>Let <var>O</var> be <emu-xref aoid="ObjectCreate"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<emu-xref href="#sec-properties-of-the-object-prototype-object"><a href="https://tc39.github.io/ecma262/#sec-properties-of-the-object-prototype-object">%ObjectPrototype%</a></emu-xref>).</li><li>Perform ? <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>O</var>, "type", <var>part</var>.[[type]]).</li><li>Perform ? <emu-xref aoid="CreateDataPropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-createdatapropertyorthrow">CreateDataPropertyOrThrow</a></emu-xref>(<var>O</var>, "value", <var>part</var>.[[value]]).</li><li>Perform ? <emu-xref aoid="CreateDataProperty"><a href="https://tc39.github.io/ecma262/#sec-createdataproperty">CreateDataProperty</a></emu-xref>(<var>result</var>, ? <emu-xref aoid="ToString"><a href="https://tc39.github.io/ecma262/#sec-tostring">ToString</a></emu-xref>(<var>n</var>), <var>O</var>).</li><li>Increment <var>n</var> by 1.</li></ol></li><li>Return <var>result</var>.
+      </li></ol></emu-alg>
+
+    </emu-clause>
+
+    <emu-clause id="sec-tolocaltime" aoid="ToLocalTime">
+      <h1><span class="secnum">1.1.9</span>ToLocalTime ( <var>date</var>, <var>calendar</var>, <var>timeZone</var> )<span class="utils"><span class="anchor"><a href="#sec-tolocaltime">#</a></span></span></h1>
+
+      <p>
+        When the ToLocalTime abstract operation is called with arguments <var>date</var>, <var>calendar</var>, and <var>timeZone</var>, the following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Apply calendrical calculations on <var>date</var> for the given <var>calendar</var> and <var>timeZone</var> to produce weekday, era, year, month, day, hour, minute, second, and inDST values. The calculations should use best available information about the specified <var>calendar</var> and <var>timeZone</var>, including current and historical information about time zone offsets from UTC and daylight saving time rules. If the <var>calendar</var> is "gregory", then the calculations must match the algorithms specified in ES2017, <emu-xref href="#sec-overview-of-date-objects-and-definitions-of-abstract-operations"><a href="https://tc39.github.io/ecma262/#sec-overview-of-date-objects-and-definitions-of-abstract-operations">20.3.1</a></emu-xref>.</li><li>Return a <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">Record</a></emu-xref> with fields [[weekday]], [[era]], [[year]], [[month]], [[day]], [[hour]], [[minute]], [[second]], and [[inDST]], each with the corresponding calculated value.
+      </li></ol></emu-alg>
+
+      <emu-note><span class="note">Note</span>
+        It is recommended that implementations use the time zone information of the IANA Time Zone Database.
+      
+      </emu-note>
+    </emu-clause>
+  </emu-clause>
+
+  <emu-clause id="sec-intl-datetimeformat-constructor">
+    <h1><span class="secnum">1.2</span>The Intl.DateTimeFormat Constructor<span class="utils"><span class="anchor"><a href="#sec-intl-datetimeformat-constructor">#</a></span></span></h1>
+
+    <p>
+      The Intl.DateTimeFormat constructor is the  <dfn>%DateTimeFormat%</dfn> intrinsic object and a standard built-in property of the Intl object. Behaviour common to all service constructor properties of the Intl object is specified in  <emu-xref href="#sec-internal-slots"></emu-xref>.
+    
+    </p>
+
+    <emu-clause id="sec-intl.datetimeformat">
+      <h1><span class="secnum">1.2.1</span>Intl.DateTimeFormat ( [ <var>locales</var> [ , <var>options</var> ] ] )<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat">#</a></span></span></h1>
+
+      <p>
+        When the <code>Intl.DateTimeFormat</code> function is called with optional arguments <var>locales</var> and <var>options</var>, the following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>If NewTarget is <emu-val>undefined</emu-val>, let <var>newTarget</var> be the <emu-xref href="#active-function-object"><a href="https://tc39.github.io/ecma262/#active-function-object">active function object</a></emu-xref>, else let <var>newTarget</var> be NewTarget.</li><li>Let <var>dateTimeFormat</var> be ? <emu-xref aoid="OrdinaryCreateFromConstructor"><a href="https://tc39.github.io/ecma262/#sec-ordinarycreatefromconstructor">OrdinaryCreateFromConstructor</a></emu-xref>(<var>newTarget</var>, <code>"%DateTimeFormatPrototype%"</code>, « [[initializedIntlObject]], [[initializedDateTimeFormat]], [[locale]], [[calendar]], [[numberingSystem]], [[timeZone]], [[weekday]], [[era]], [[year]], [[month]], [[day]], [[hour]], [[minute]], [[second]], [[timeZoneName]], <del>[[hour12]]</del><ins>[[hourCycle]]</ins>, [[hourNo0]], [[pattern]], [[boundFormat]] »).</li><li>Return ? <emu-xref aoid="InitializeDateTimeFormat"><a href="#sec-initializedatetimeformat">InitializeDateTimeFormat</a></emu-xref>(<var>dateTimeFormat</var>, <var>locales</var>, <var>options</var>).
+      </li></ol></emu-alg>
+    </emu-clause>
+  </emu-clause>
+
+  <emu-clause id="sec-properties-of-intl-datetimeformat-constructor">
+    <h1><span class="secnum">1.3</span>Properties of the Intl.DateTimeFormat Constructor<span class="utils"><span class="anchor"><a href="#sec-properties-of-intl-datetimeformat-constructor">#</a></span></span></h1>
+
+    <p>
+      The Intl.DateTimeFormat constructor has the following properties:
+    
+    </p>
+
+    <emu-clause id="sec-intl.datetimeformat.prototype">
+      <h1><span class="secnum">1.3.1</span>Intl.DateTimeFormat.prototype<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat.prototype">#</a></span></span></h1>
+
+      <p>
+        The value of <code>Intl.DateTimeFormat.prototype</code> is <emu-xref href="#sec-properties-of-intl-datetimeformat-prototype-object"><a href="#sec-properties-of-intl-datetimeformat-prototype-object">%DateTimeFormatPrototype%</a></emu-xref>.
+      
+      </p>
+      <p>
+        This property has the attributes { [[Writable]]: <emu-val>false</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>false</emu-val> }.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.datetimeformat.supportedlocalesof">
+      <h1><span class="secnum">1.3.2</span>Intl.DateTimeFormat.supportedLocalesOf ( <var>locales</var> [ , <var>options</var> ] )<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat.supportedlocalesof">#</a></span></span></h1>
+
+      <p>
+        When the <code>supportedLocalesOf</code> method is called with arguments <var>locales</var> and <var>options</var>, the following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>availableLocales</var> be <emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref>.[[availableLocales]].</li><li>Let <var>requestedLocales</var> be ? CanonicalizeLocaleList(<var>locales</var>).</li><li>Return ? SupportedLocales(<var>availableLocales</var>, <var>requestedLocales</var>, <var>options</var>).
+      </li></ol></emu-alg>
+
+      <p>
+        The value of the <code>length</code> property of the <emu-val>supportedLocalesOf</emu-val> method is 1.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.datetimeformat-internal-slots">
+      <h1><span class="secnum">1.3.3</span>Internal slots<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat-internal-slots">#</a></span></span></h1>
+
+      <p>
+        The value of the [[availableLocales]] internal slot is implementation defined within the constraints described in  <emu-xref href="#sec-internal-slots"></emu-xref>.
+      
+      </p>
+
+      <p>
+      The value of the [[relevantExtensionKeys]] internal slot is « <code>"ca"</code>, <code>"nu"</code><ins>, <code>"hc"</code></ins> ».
+      
+      </p>
+
+      <emu-note><span class="note">Note 1</span>
+      Unicode Technical Standard 35 describes three locale extension keys that are relevant to date and time formatting, "ca" for calendar, "tz" for time zone,<ins>"hc" for hour cycle,</ins> and implicitly "nu" for the numbering system of the number format used for numbers within the date format. DateTimeFormat, however, requires that the time zone is specified through the timeZone property in the options objects.
+      
+      </emu-note>
+
+      <p>
+        The value of the [[localeData]] internal slot is implementation defined within the constraints described in  <emu-xref href="#sec-internal-slots"></emu-xref> and the following additional constraints:
+      
+      </p>
+
+      <ul>
+        <li>
+          The array that is the value of the "nu" property of any locale property of [[localeData]] must not include the values "native", "traditio", or "finance".
+        
+        </li>
+        <li>
+          [[localeData]][locale] must have  <del>hour12</del><ins>hourCycle</ins> and hourNo0 properties with Boolean values for all locale values.
+        
+        </li>
+        <li>
+          [[localeData]][locale] must have a formats property for all locale values. The value of this property must be an array of objects, each of which has a subset of the properties shown in  <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>, where each property must have one of the values specified for the property in  <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>. Multiple objects in an array may use the same subset of the properties as long as they have different values for the properties. The following subsets must be available for each locale:
+          
+          <ul>
+            <li>weekday, year, month, day, hour, minute, second</li>
+            <li>weekday, year, month, day</li>
+            <li>year, month, day</li>
+            <li>year, month</li>
+            <li>month, day</li>
+            <li>hour, minute, second</li>
+            <li>hour, minute</li>
+          </ul>
+          Each of the objects must also have a pattern property, whose value is a String value that contains for each of the date and time format component properties of the object a substring starting with "{", followed by the name of the property, followed by "}". If the object has an hour property, it must also have a pattern12 property, whose value is a String value that, in addition to the substrings of the pattern property, contains a substring "{ampm}".
+        
+        </li>
+      </ul>
+
+      <p>
+        EXAMPLE     An implementation might include the following object as part of its English locale data: {hour: "numeric", minute: "2-digit", second: "2-digit", pattern: "{hour}:{minute}:{second}", pattern12: "{hour}:{minute}:{second} {ampm}"}.
+      
+      </p>
+
+      <emu-note><span class="note">Note 2</span>
+        It is recommended that implementations use the locale data provided by the Common Locale Data Repository (available at  <a href="http://cldr.unicode.org/">http://cldr.unicode.org/</a>).
+      
+      </emu-note>
+    </emu-clause>
+  </emu-clause>
+
+  <emu-clause id="sec-properties-of-intl-datetimeformat-prototype-object">
+    <h1><span class="secnum">1.4</span>Properties of the Intl.DateTimeFormat Prototype Object<span class="utils"><span class="anchor"><a href="#sec-properties-of-intl-datetimeformat-prototype-object">#</a></span></span></h1>
+
+    <p>
+      The Intl.DateTimeFormat prototype object is the intrinsic object  <dfn>%DateTimeFormatPrototype%</dfn>. The Intl.DateTimeFormat prototype object is itself an <emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref> instance, whose internal slots are set as if it had been constructed by the expression <emu-xref aoid="Construct"><a href="https://tc39.github.io/ecma262/#sec-construct">Construct</a></emu-xref>(<emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref>, « », <emu-xref href="#sec-object-constructor"><a href="https://tc39.github.io/ecma262/#sec-object-constructor">%Object%</a></emu-xref>).
+    
+    </p>
+
+    <p>
+      In the following descriptions of functions that are properties or [[Get]] attributes of properties of the Intl.DateTimeFormat prototype object, the phrase "this DateTimeFormat object" refers to the object that is the this value for the invocation of the function; a <emu-val>TypeError</emu-val> exception is thrown if the this value is not an object or an object that does not have an [[initializedDateTimeFormat]] internal slot with value <emu-val>true</emu-val>.
+    
+    </p>
+
+    <emu-clause id="sec-intl.datetimeformat.prototype.constructor">
+      <h1><span class="secnum">1.4.1</span>Intl.DateTimeFormat.prototype.constructor<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat.prototype.constructor">#</a></span></span></h1>
+
+      <p>
+        The initial value of <code>Intl.DateTimeFormat.prototype.constructor</code> is the intrinsic object <emu-xref href="#sec-intl-datetimeformat-constructor"><a href="#sec-intl-datetimeformat-constructor">%DateTimeFormat%</a></emu-xref>.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.datetimeformat.prototype-@@tostringtag">
+      <h1><span class="secnum">1.4.2</span>Intl.DateTimeFormat.prototype [ @@toStringTag ]<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat.prototype-@@tostringtag">#</a></span></span></h1>
+
+      <p>
+        The initial value of the @@toStringTag property is the string value <code>"Object"</code>.
+      
+      </p>
+
+      <p>
+        This property has the attributes { [[Writable]]: <emu-val>false</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.
+      
+      </p>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.datetimeformat.prototype.format">
+      <h1><span class="secnum">1.4.3</span>get Intl.DateTimeFormat.prototype.format<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat.prototype.format">#</a></span></span></h1>
+
+      <p>
+        Intl.DateTimeFormat.prototype.format is an accessor property whose set accessor function is <emu-val>undefined</emu-val>. Its get accessor function performs the following steps:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>dtf</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>dtf</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>dtf</var> does not have an [[initializedDateTimeFormat]] internal slot, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>dtf</var>.[[boundFormat]] is <emu-val>undefined</emu-val>, then<ol><li>Let <var>F</var> be a new built-in function object as defined in DateTime Format Functions (<emu-xref href="#sec-datetime-format-functions"><a href="#sec-datetime-format-functions">1.1.5</a></emu-xref>).</li><li>Let <var>bf</var> be <emu-xref aoid="BoundFunctionCreate"><a href="https://tc39.github.io/ecma262/#sec-boundfunctioncreate">BoundFunctionCreate</a></emu-xref>(<var>F</var>, <var>dft</var>, « »).</li><li>Perform ! <emu-xref aoid="DefinePropertyOrThrow"><a href="https://tc39.github.io/ecma262/#sec-definepropertyorthrow">DefinePropertyOrThrow</a></emu-xref>(<var>bf</var>, <code>"length"</code>, PropertyDescriptor {[[Value]]: 1, [[Writable]]: <emu-val>false</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val>}).</li><li>Set <var>dtf</var>.[[boundFormat]] to <var>bf</var>.</li></ol></li><li>Return <var>dtf</var>.[[boundFormat]].
+      </li></ol></emu-alg>
+    </emu-clause>
+
+    <emu-clause id="sec-Intl.DateTimeFormat.prototype.formatToParts">
+      <h1><span class="secnum">1.4.4</span>Intl.DateTimeFormat.prototype.formatToParts ( [ <var>date</var> ] )<span class="utils"><span class="anchor"><a href="#sec-Intl.DateTimeFormat.prototype.formatToParts">#</a></span></span></h1>
+
+      <p>
+        When the <code>formatToParts</code> method is called with an optional argument <var>date</var>, the following steps are taken:
+      
+      </p>
+
+      <emu-alg><ol><li>Let <var>dtf</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>dtf</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>dtf</var> does not have an [[initializedDateTimeFormat]] internal slot, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>date</var> is not provided or is <emu-val>undefined</emu-val>, then<ol><li>Let <var>x</var> be %Date_now%().</li></ol></li><li>Else,<ol><li>Let <var>x</var> be ? <emu-xref aoid="ToNumber"><a href="https://tc39.github.io/ecma262/#sec-tonumber">ToNumber</a></emu-xref>(<var>date</var>).</li></ol></li><li>Return ? FormatDateTimeToParts(<var>dtf</var>, <var>x</var>).
+      </li></ol></emu-alg>
+    </emu-clause>
+
+    <emu-clause id="sec-intl.datetimeformat.prototype.resolvedoptions">
+      <h1><span class="secnum">1.4.5</span>Intl.DateTimeFormat.prototype.resolvedOptions ()<span class="utils"><span class="anchor"><a href="#sec-intl.datetimeformat.prototype.resolvedoptions">#</a></span></span></h1>
+
+      <p>
+        This function provides access to the locale and formatting options computed during initialization of the object.
+      
+      </p>
+
+      <p>
+        The function returns a new object whose properties and attributes are set as if constructed by an object literal assigning to each of the following properties the value of the corresponding internal slot of this DateTimeFormat object (see  <emu-xref href="#sec-properties-of-intl-datetimeformat-instances"><a href="#sec-properties-of-intl-datetimeformat-instances">1.5</a></emu-xref>): locale, calendar, numberingSystem, timeZone,  <del>hour12</del><ins>hourCycle</ins>, weekday, era, year, month, day, hour, minute, second, and timeZoneName. Properties whose corresponding internal slots have the value <emu-val>undefined</emu-val> are not assigned.
+      
+      </p>
+
+      <emu-note><span class="note">Note</span>
+        In this version of the ECMAScript 2017 Internationalization API, the timeZone property will be the name of the default time zone if no timeZone property was provided in the options object provided to the Intl.DateTimeFormat constructor. The first edition left the timeZone property <emu-val>undefined</emu-val> in this case.
+      
+      </emu-note>
+    </emu-clause>
+  </emu-clause>
+
+  <emu-clause id="sec-properties-of-intl-datetimeformat-instances">
+    <h1><span class="secnum">1.5</span>Properties of Intl.DateTimeFormat Instances<span class="utils"><span class="anchor"><a href="#sec-properties-of-intl-datetimeformat-instances">#</a></span></span></h1>
+
+    <p>
+      Intl.DateTimeFormat instances inherit properties from <emu-xref href="#sec-properties-of-intl-datetimeformat-prototype-object"><a href="#sec-properties-of-intl-datetimeformat-prototype-object">%DateTimeFormatPrototype%</a></emu-xref>.
+    
+    </p>
+
+    <p>
+      Intl.DateTimeFormat instances and other objects that have been successfully initialized as a DateTimeFormat object have [[initializedIntlObject]] and [[initializedDateTimeFormat]] internal slots whose values are <emu-val>true</emu-val>.
+    
+    </p>
+
+    <p>
+      Objects that have been successfully initialized as a DateTimeFormat also have several internal slots that are computed by the constructor:
+    
+    </p>
+
+    <ul>
+      <li>[[locale]] is a String value with the language tag of the locale whose localization is used for formatting.</li>
+      <li>[[calendar]] is a String value with the "type" given in Unicode Technical Standard 35 for the calendar used for formatting.</li>
+      <li>[[numberingSystem]] is a String value with the "type" given in Unicode Technical Standard 35 for the numbering system used for formatting.</li>
+      <li>[[timeZone]] is a String value with the IANA time zone name of the time zone used for formatting.</li>
+      <li>[[weekday]], [[era]], [[year]], [[month]], [[day]], [[hour]], [[minute]], [[second]], [[timeZoneName]] are each either <emu-val>undefined</emu-val>, indicating that the component is not used for formatting, or one of the String values given in  <emu-xref href="#table-datetimeformat-components"><a href="#table-datetimeformat-components">Table 1</a></emu-xref>, indicating how the component should be presented in the formatted output.</li>
+      <li><del>[[hour12]] is a Boolean value indicating whether 12-hour format (<emu-val>true</emu-val>) or 24-hour format (<emu-val>false</emu-val>) should be used. It is only used when [[hour]] is not <emu-val>undefined</emu-val>.</del></li>
+      <li><ins>[[hourCycle]] is a String value indicating whether 12-hour format (<emu-val>"h12"</emu-val>) or 24-hour format (<emu-val>"h24"</emu-val>) should be used. It is only used when [[hour]] is not <emu-val>undefined</emu-val>.</ins></li>
+      <li>[[hourNo0]] is a Boolean value indicating whether hours from 1 to 12 (<emu-val>true</emu-val>) or from 0 to 11 (<emu-val>false</emu-val>) should be used. It is only used when  <del>[[hour12]] has the value <emu-val>true</emu-val></del><ins>[[hourCycle]] has the value <emu-val>"h12"</emu-val></ins>.</li>
+      <li>[[pattern]] is a String value as described in  <emu-xref href="#sec-intl.datetimeformat-internal-slots"><a href="#sec-intl.datetimeformat-internal-slots">1.3.3</a></emu-xref>.</li>
+    </ul>
+
+    <p>
+      Finally, objects that have been successfully initialized as a DateTimeFormat have a [[boundFormat]] internal slot that caches the function returned by the format accessor (<emu-xref href="#sec-intl.datetimeformat.prototype.format"><a href="#sec-intl.datetimeformat.prototype.format">1.4.3</a></emu-xref>).
+    
+    </p>
+  </emu-clause>
+</emu-clause>
+</body>
